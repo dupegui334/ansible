@@ -1,0 +1,28 @@
+# int -> integers
+# string -> hola, "hola", 'hola'; the cuotes are not mandatory
+# bool -> 0/false or 1/true
+# null - nil -> undefined or ""
+# float -> 1.11111
+# objects -> {key: value} -> {"hola":12, "otro":null, "otro":1,...}// we query the keys
+# array - vectors - slices ["hola", 1, 3.1416, null, true, {key: "maria"}] -->stored as [0: "hola, 1:1, 2:"3.1416", ...]// we query the positions
+
+# to create objects in yaml we use this: identation and the ---
+---
+papa_pepito:
+
+  pepito_hermano: hola que hace
+
+  pepito:
+    hijo1: "hijo de pepito" #Define the keys with a tab
+    hijo2: "hijo 2 de pepito"
+
+array_vector: 
+  - 0.1 #Define an array with the tab and the " - " 
+  - true
+  - null
+  - buenas:
+      hola1: hola que hace
+
+
+#01/sintaxis.yml->pepito->hijo1->======hijo de pepito
+#01/sintaxis.yml->pepito->======{hijo1: "hijo de pepito", hijo2: "hijo 2 de pepito"}
