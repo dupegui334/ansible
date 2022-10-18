@@ -1,0 +1,9 @@
+#Reserved words:
+- name: mi primer playbook en Ansible
+  hosts: localhost 
+  vars_files: 
+    - "./sintaxis.yml" #brought files from another file, like a module
+  tasks: # we use tasks for everything in Ansible
+    - name: "mostrar la familia de pepito"
+      debug: #Module debug for debug a variable: papa_pepito
+        var: papa_pepito #Object of module debug
