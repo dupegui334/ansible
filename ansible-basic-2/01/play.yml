@@ -8,7 +8,12 @@
       debug: #Module debug for debug a variable: papa_pepito
         var: papa_pepito #Object of module debug
 
-    - name: "Escribir contenido de array"
+    - name: "Crear file"
       file: #Module file for create/edit/read files
         path: ./mi-1-file.txt #path of the file
         state: touch # the action will be create a file
+
+    - name: "Escribir a file"
+      lineinfile: #Module file for create/edit/read files
+        line: "el {{papa_pepito.pepito.hijo1}} dice {{array_vector[3].buenas.hola1}}" #What are we going to write
+        path: ./mi-1-file.txt #path of the file
