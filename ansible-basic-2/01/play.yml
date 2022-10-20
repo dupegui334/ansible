@@ -7,3 +7,8 @@
     - name: "mostrar la familia de pepito"
       debug: #Module debug for debug a variable: papa_pepito
         var: papa_pepito #Object of module debug
+
+    - name: "Escribir contenido de array"
+      file: #Module file for create/edit/read files
+        path: ./mi-1-file.txt #path of the file
+        state: touch # the action will be create a file
